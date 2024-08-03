@@ -33,8 +33,8 @@ insert into master_data.customer_detail (
 insert into master_data.enterprise_detail (
     customer_id, enterprise_name, email, telephone, address
 ) values
-    ('CUST001', 'Doe Enterprises', 'contact@doeenterprises.com', '555-1122', '500 Business Blvd, Springfield'),
-    ('CUST002', 'Smith Solutions', 'info@smithsolutions.com', '555-3344', '600 Commerce Street, Shelbyville'),
-    ('CUST003', 'Johnson Innovations', 'support@johnsoninnovations.com', '555-5566', '700 Industry Park, Capital City'),
-    ('CUST004', 'Brown LLC', 'sales@brownllc.com', '555-7788', '800 Corporate Drive, Springfield');
+    ('CUSTE001', 'Doe Enterprises', 'contact@doeenterprises.com', '555-1122', '500 Business Blvd, Springfield'),
+    ('CUSTE002', 'Smith Solutions', 'info@smithsolutions.com', '555-3344', '600 Commerce Street, Shelbyville'),
+    ('CUSTE003', 'Johnson Innovations', 'support@johnsoninnovations.com', '555-5566', '700 Industry Park, Capital City'),
+    ('CUSTE004', 'Brown LLC', 'sales@brownllc.com', '555-7788', '800 Corporate Drive, Springfield');
 
