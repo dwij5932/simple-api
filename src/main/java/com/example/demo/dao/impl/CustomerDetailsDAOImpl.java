@@ -19,10 +19,6 @@ public class CustomerDetailsDAOImpl implements CustomerDetailsDAO {
 
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
-//    public CustomerDetailsDAOImpl(NamedParameterJdbcTemplate namedParameterJdbcTemplate) {
-//        this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
-//    }
-
     @Override
     public List<CustomerResult> getCustomerByID(String ID) {
         try{
@@ -31,7 +27,6 @@ public class CustomerDetailsDAOImpl implements CustomerDetailsDAO {
             return  namedParameterJdbcTemplate.query(GET_CUSTOMER_BY_ID, parameterSource, new CustomerResultMapper());
 
         }catch (DataAccessException e){
-//            log.error("Query {} failed for customerId: {}.", GET_CUSTOMER_BY_ID, ID);
             throw e;
         }
     }
